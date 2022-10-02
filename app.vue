@@ -8,18 +8,7 @@
         </li>
         <li>Potential improvement - self exclusion for filter options</li>
         <li>Tree Select Supports Search by Skill Category / Skill Name</li>
-        <li>Filtered Learning Objects will are rendered on select</li>
-        <li>
-          <span class="code-quote">buildTreeDataForVueTree</span> - prepares the
-          category and skill data to the shape expected by
-          <span class="code-quote">vue3-treeselect</span>. The returned data by
-          this function can also be used to build a custom Node Tree Select.
-        </li>
-        <li>
-          <span class="code-quote">getFilteredResultsVueTree</span> - filters
-          Learning Objects based on the <span class="code-quote">id</span> of
-          the selected node.
-        </li>
+        <li>Filtered Learning Objects will be rendered on select</li>
         <li>
           <span class="code-quote">vue3-treeselect</span> is known to have
           issues, this library was used only for visual reference
