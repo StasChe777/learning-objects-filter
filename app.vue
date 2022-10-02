@@ -37,9 +37,7 @@
             :options="treeData"
           />
           <select class="option-select" v-model="filters.activityType">
-            <option :value="null" disabled hidden>
-              Please Select
-            </option>
+            <option :value="null" disabled hidden>Please Select</option>
             <option value="">Show All</option>
             <option
               v-for="activityType in getTypeSelectValues"
@@ -55,7 +53,7 @@
           </h2>
           <div class="lessons">
             <div
-            class="lesson"
+              class="lesson"
               v-for="learningObject in getFilteredLearningObjectsByNode"
               :key="learningObject.id"
             >
@@ -84,14 +82,17 @@ export default defineComponent({
       getFilterValueDuration,
       getByActivityIdId,
       getLearningObjects,
-      treeData,
       getFilteredResults,
-      getTypeSelectValues,
       filters,
       setFilteredLearningObjects,
     } = learningObjectsStore;
-    const { getFilteredLearningObjectsByNode, getLearningObjectsByNode, getNodeFilterValue } =
-      storeToRefs(useLearningObjectsStore());
+    const {
+      getFilteredLearningObjectsByNode,
+      getLearningObjectsByNode,
+      getNodeFilterValue,
+      getTypeSelectValues,
+      treeData,
+    } = storeToRefs(useLearningObjectsStore());
     const learningObjects = ref(null);
     const learningObjectsVue = ref(null);
     const skillSearchQuery = ref("");
