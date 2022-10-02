@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "title": "Learning Item 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+        "duration": "1.28000",
+        "type": "Online Course",
+        "url": "http://www.google.com",
+        "skills": [
+            {
+                "id": 356,
+                "name": "Presentation Skills",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+                "category": {
+                    "id": 54,
+                    "name": "Soft Skills"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Learning Item 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+        "duration": "1.28000",
+        "type": "Book",
+        "url": "http://www.google.com",
+        "skills": [
+            {
+                "id": 356,
+                "name": "Presentation Skills",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+                "category": {
+                    "id": 54,
+                    "name": "Soft Skills"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Learning Item 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+        "duration": "1.28000",
+        "type": "Podcast",
+        "url": "http://www.google.com",
+        "skills": [
+            {
+                "id": 204,
+                "name": "Project Management",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+                "category": {
+                    "id": 54,
+                    "name": "Soft Skills"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Learning Item 4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+        "duration": "1.28000",
+        "type": "Online Course",
+        "url": "http://www.google.com",
+        "skills": [
+            {
+                "id": 2185,
+                "name": "Javascript",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+                "category": {
+                    "id": 58,
+                    "name": "Technical Skills"
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Learning Item 4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+        "duration": "1.28000",
+        "type": "Online Course",
+        "url": "http://www.google.com",
+        "skills": [
+            {
+                "id": 2185,
+                "name": "Javascript",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis sagittis est, aliquam viverra massa suscipit eget. Integer non tellus diam",
+                "category": {
+                    "id": 58,
+                    "name": "Technical Skills"
+                }
+            }
+        ]
+    }
+]
