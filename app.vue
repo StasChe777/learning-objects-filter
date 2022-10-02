@@ -7,7 +7,7 @@
           Assumption made that initially all learning objects shoud be rendered
         </li>
         <li>Potential improvement - self exclusion for filter options</li>
-        <li>Tree Select Search by Skill Category / Skill Name</li>
+        <li>Tree Select Supports Search by Skill Category / Skill Name</li>
         <li>Filtered Learning Objects will are rendered on select</li>
         <li>
           <span class="code-quote">buildTreeDataForVueTree</span> - prepares the
@@ -66,7 +66,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { storeToRefs } from "pinia";
 import { useLearningObjectsStore } from "@/store/useLearningObjectsStore/useLearningObjectsStore";
 import Treeselect from "vue3-treeselect";
@@ -79,58 +79,27 @@ export default defineComponent({
     const learningObjectsStore = useLearningObjectsStore();
     const {
       init: initLearningObjects,
-      getFilterValueDuration,
-      getByActivityIdId,
-      getLearningObjects,
-      getFilteredResults,
       filters,
       setFilteredLearningObjects,
     } = learningObjectsStore;
     const {
       getFilteredLearningObjectsByNode,
-      getLearningObjectsByNode,
       getNodeFilterValue,
       getTypeSelectValues,
       treeData,
     } = storeToRefs(useLearningObjectsStore());
     const learningObjects = ref(null);
-    const learningObjectsVue = ref(null);
-    const skillSearchQuery = ref("");
-    const handleSkillSearch = () => {
-      learningObjects.value = getFilteredResults(skillSearchQuery.value);
-    };
-    const formattedTreeData = computed(() => {
-      const formattedData = getLearningObjects.map((item) => {
-        return {
-          id: item.id,
-          label: item.title,
-          children: item.skills.map((skill) => {
-            return {
-              id: skill.id,
-              label: skill.name,
-            };
-          }),
-        };
-      });
-      return formattedData;
-    });
+
     watch(getNodeFilterValue, () => {
       setFilteredLearningObjects(filters.nodeFilter);
     });
     initLearningObjects();
 
     return {
-      handleSkillSearch,
-      formattedTreeData,
       learningObjects,
-      getFilterValueDuration,
-      skillSearchQuery,
-      getLearningObjectsByNode,
-      getByActivityIdId,
       treeData,
       getFilteredLearningObjectsByNode,
       getTypeSelectValues,
-      learningObjectsVue,
       filters,
     };
   },
@@ -150,7 +119,6 @@ export default defineComponent({
     gap: 10px;
   }
 }
-
 .option-select {
   border-color: rgb(221, 221, 221);
 }

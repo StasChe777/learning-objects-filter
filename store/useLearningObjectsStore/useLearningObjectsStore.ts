@@ -1,18 +1,14 @@
 import { defineStore } from "pinia";
 import {
   LearningObject,
-  UseLearningObjectsStoreProps,
-  CategoryNode,
+  CategoryNode, 
   IndexedSkillNode,
   IndexedCategoryTree,
   SetFilteredLearningObjectsParam,
   DuratonFilterRange,
 } from "./types";
 
-export const useLearningObjectsStore = defineStore<
-  string,
-  UseLearningObjectsStoreProps
->({
+export const useLearningObjectsStore = defineStore({
   id: "learningObjects-store",
   state: () => ({
     learningObjects: [],
